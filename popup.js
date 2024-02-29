@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     var lines = details.split('\n');
 
                     // Apply different styling to the first line
-                    var firstLine = '<p style="color: ' + (lines[0].includes('suspicious') ? 'red' : 'green') + '; font-weight: bold;">' + lines[0] + '</p>';
+                    var firstLine = '<p style="color: ' + (lines[0].includes('suspicious') ? '#d21404' : '#95e800') + '; font-weight: bold;">' + lines[0] + '</p>';
                     resultDiv.innerHTML += firstLine;
 
                     // Add remaining lines with styling

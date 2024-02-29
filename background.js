@@ -19,7 +19,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             .then(data => {
                 var result = '';
                 if (data.google_verified === 'yes' || data.final_verdict) {
-                    result += 'URL seems suspicious\n';
+                    result += 'URL seems suspicious, Proceed with caution!\n';
                 } else {
                     result += 'URL seems to be safe!\n';
                 }

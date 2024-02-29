@@ -5,7 +5,13 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    width: 400px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
 }
 
 .logo {
@@ -57,3 +63,15 @@ button:active {
 .model-score {
     color: #7d2ae8;
 }
+/* Add CSS for the emoji */
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#result p {
+    text-align: justify;
+}
+
+
+/* Other existing CSS remains unchanged */
