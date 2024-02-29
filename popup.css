@@ -48,3 +48,12 @@ button:active {
 .value {
     color: #7d2ae8; /* Text color for values */
 }
+
+/* Additional styling for Trust Score and Model Prediction Score */
+.trust-score {
+    color: white;
+}
+
+.model-score {
+    color: #7d2ae8;
+}
