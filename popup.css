@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1D1D1D;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 150px; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space between logo and button */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #7d2ae8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+}
+
+button:hover {
+    background-color: #6a1ec1; /* Darken color on hover */
+}
+
+button:active {
+    background-color: #4f158c; /* Darken color on click */
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1D1D1D; /* Background color for data */
+    color: white; /* Text color for labels */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.label {
+    color: white; /* Text color for labels */
+    font-weight: bold; /* Bold font for labels */
+}
+
+.value {
+    color: #7d2ae8; /* Text color for values */
+}
