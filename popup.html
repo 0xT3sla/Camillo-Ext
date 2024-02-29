@@ -8,12 +8,17 @@
     <script src="popup.js"></script>
 </head>
 <body>
-    <div class="container" style="width: 300px; height: 300px;">
+    <div class="container" style="width: 400px; height: 400px;">
         <img src="logo.png" alt="Logo" class="logo">
         <button id="fetchButton">Check</button>
         <div id="result">
-            <span class="icon">💡</span>
-            <p>The <b>Trust Score</b> predicts how much you can trust the URL, The <b>Model Prediction Score</b>shows the chances of the URL being a phishing site.</p>
+            <!-- Initial paragraph -->
+            <div id="initialParagraph">
+                <span class="icon">💡 What does it mean? 💡</span>
+                <p>The <b style="color:#95e800;">Trust Score</b> is calculated with Traditional methods to predict the level of trustworthiness of the URL, & <b style="color:#DC143C;">Suspicion Score</b> uses Machine learning to predict the chances of the URL being an actual phishing site.</p>
+            </div>
+            <!-- Loading dots -->
+            <div class="loading-dots"></div>
         </div>
     </div>
 </body>

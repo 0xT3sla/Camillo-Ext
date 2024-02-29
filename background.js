@@ -24,7 +24,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
                     result += 'URL seems to be safe!\n';
                 }
                 result += 'Trust Score: ' + data.trust_score + '\n';
-                result += 'Model Prediction Score: ' + data.model_score + '\n';
+                result += 'Suspicion Score: ' + data.model_score + '\n';
 
                 sendResponse({ details: result });
             })
