@@ -23,13 +23,18 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
                 } else {
                     result += 'URL seems to be safe!\n';
                 }
-                result += 'Trust Score: ' + data.trust_score + '\n';
-                result += 'Suspicion Score: ' + data.model_score + '\n';
 
-                sendResponse({ details: result });
+                // Check if trust score and model score are defined
+                if (data.trust_score !== undefined && data.model_score !== undefined) {
+                    result += 'Trust Score: ' + data.trust_score + '\n';
+                    result += 'Suspicion Score: ' + data.model_score + '\n';
+                    sendResponse({ details: result });
+                } else {
+                    throw new Error('Failed to analyze URL! :(');
+                }
             })
             .catch(error => {
-                sendResponse({ error: 'Failed to analyze URL' });
+                sendResponse({ error: error.message });
             });
     } catch (error) {
         sendResponse({ error: error.message });
